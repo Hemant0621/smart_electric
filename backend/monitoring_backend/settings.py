@@ -90,6 +90,7 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOW_ALL_ORIGINS = True  # (keep this for now while testing)
+CSRF_TRUSTED_ORIGINS = ["https://smart-electric.onrender.com"]
 
 # Allow common headers like Content-Type, Authorization etc.
 CORS_ALLOW_HEADERS = list(default_headers) + [
