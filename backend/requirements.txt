@@ -1,1 +1,17 @@
-gunicorn==22.0.0
+# Core framework
+Django>=5.1,<6.0
+
+# MongoDB ODM
+mongoengine>=0.28
+
+# Environment variables
+python-dotenv>=1.0
+
+# CORS handling
+django-cors-headers>=4.3
+
+# REST API support (if you’re using DRF in installed apps)
+djangorestframework>=3.15
+
+# WSGI server for Render
+gunicorn>=22.0
