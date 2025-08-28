@@ -19,7 +19,7 @@ export default function Settings() {
       };
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/energy/tariff/update/",
+        "https://smart-electric.onrender.com/api/energy/tariff/update/",
         payload
       );
 

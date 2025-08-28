@@ -49,7 +49,7 @@ export default function Dashboard() {
 
       const startTime = Date.now();
       try {
-        let url = `http://127.0.0.1:8000/api/energy/graph_analytics?user_id=${userId}&mode=${mode}&range=${range.range}`;
+        let url = `https://smart-electric.onrender.com/api/energy/graph_analytics?user_id=${userId}&mode=${mode}&range=${range.range}`;
         if (range.range === "custom") {
           url += `&start_date=${range.start_date}&end_date=${range.end_date}`;
         }

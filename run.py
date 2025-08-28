@@ -3,7 +3,7 @@ import random
 import time
 from datetime import datetime, timedelta, timezone
 
-API_URL = "http://127.0.0.1:8000/api/energy/submit/"
+API_URL = "https://smart-electric.onrender.com/api/energy/submit/"
 USER_ID = "hemant0621"
 
 def days_in_month(year, month):
