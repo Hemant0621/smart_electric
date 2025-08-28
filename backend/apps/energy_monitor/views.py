@@ -203,10 +203,13 @@ def graph_analytics(request):
 
     elif mode == "hybrid":
         net_export = total_solar - total_consumption
+        if net_export < 0:
+            cost = -abs(net_export) * grid_rate
+        else:
+            cost = net_export * solar_rate 
         result["consumption"] = round(total_consumption, 2)
         result["solar"] = round(total_solar, 2)
-        result["exported"] = round(net_export, 2)
-        result["cost"] = round(net_export * solar_rate, 2)
+        result["cost"] = round(cost, 2)
 
 
     response = {**response, **result}
